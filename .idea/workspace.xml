@@ -1885,9 +1885,15 @@
       <change beforePath="$PROJECT_DIR$/qr_app/utils.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/qr_app/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/postcard_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/postcard_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/qr_code.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/qr_code.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/baseOLD.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/card_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/change_password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/file_upload_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/media_player.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/password_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/postcard_page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/qr_codeOLD.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/set_password.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1953,7 +1959,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716581259498</updated>
       <workItem from="1718224165110" duration="23000" />
-      <workItem from="1718224322065" duration="14036000" />
+      <workItem from="1718224322065" duration="14230000" />
     </task>
     <servers />
   </component>
