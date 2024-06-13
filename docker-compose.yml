@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: django
+    restart: always
+    env_file:
+      - django.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - static_volume:/app/staticfiles
+      - uploads_volume:/app/uploads
+    command: make setup_and_run
+    depends_on:
+      - redis
+
+  redis:
+    image: dockerhub.timeweb.cloud/library/redis:6.2
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  nginx:
+    image: dockerhub.timeweb.cloud/library/nginx:latest
+    container_name: ngx
+    ports:
+      - "80:80"
+    volumes:
+      - static_volume:/app/staticfiles
+      - uploads_volume:/app/uploads
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - app
+
+volumes:
+  static_volume:
+  uploads_volume:
